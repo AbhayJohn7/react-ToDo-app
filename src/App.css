@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Added to ensure padding and borders don't affect element size */
+}
+
+body {
+  background-image: url('src/assets/bg.jpeg');
+  background-size: cover;
+  font-family: Arial, sans-serif; /* Added a clean and modern font */
+}
+
+.app {
+  position: absolute;
+  top: 80px;
+  left: 50%; /* Centered horizontally */
+  transform: translateX(-50%); /* Ensures perfect centering */
+  align-items: center;
+  justify-items: center;
+}
+
+.app .mainHeading h1 {
+  text-align: center;
+  font-size: 3em; /* Increased font size for more impact */
+  color: #271a1a; /* Softened white to reduce eye strain */
+  margin-bottom: 1.5em; /* Added space below heading */
+}
+
+.app h1, h2 {
+  color: #f0f0f0;
+  text-align: center;
+}
+
+.app .input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.2em; /* Increased top margin for better spacing */
+  width: 39em; /* Increased width for more space */
+  height: 2.5em; /* Adjusted height for balance */
+  background-color: #fff;
+  border-radius: 10px; /* Rounded the corners a bit more */
+  padding: 8px 12px; /* Adjusted padding for comfort */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Added shadow for depth */
+}
+
+.app .input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding-left: 10px; /* Added padding for input */
+  font-size: 1em;
+  color: #333; /* Changed text color for better readability */
+  background-color: transparent;
+}
+
+.app i {
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: 700; /* Adjusted weight for better visual balance */
+  color: #8b8b8b; /* Softened icon color */
+  margin-right: 10px; /* Increased margin for better spacing */
+  transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+.app i:hover {
+  color: #333; /* Darken icon on hover */
+}
+
+.app .todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1.5em; /* Added margin for separation from input */
+}
+
+.app .todos .todo {
+  margin-top: 0.8em;
+  width: 22em; /* Increased width */
+  height: 2.5em; /* Adjusted height for consistency */
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px; /* Matching border-radius with input */
+  padding: 8px 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: transform 0.2s ease; /* Added hover effect */
+}
+
+.app .todos .todo:hover {
+  transform: scale(1.05); /* Slight scale on hover */
+}
+
+.app .todos .todo .left {
+  display: flex;
+  align-items: center;
+}
+
+.app .todos .todo .left p {
+  margin-left: 8px; /* Increased margin for spacing */
+  font-size: 1em;
+  font-weight: 600; /* Slightly reduced weight */
+  color: #666; /* Softened color for readability */
+}
+
